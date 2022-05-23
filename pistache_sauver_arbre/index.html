@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link src="https://fr.freepik.com/vecteurs-libre/collection-logos-medias-sociaux_10363326.htm#page=1&query=social&position=4">
+</head>
+<body>
+        <div class="content">
+    <nav>
+        <div class="logo">Pistache.</div>
+            <div class="nav-links">
+                <ul>
+                    <li><img src="logo-circulaire-facebook.png" alt=""></li>
+                    <li><img src="instagam.png" alt=""></li>
+                    <li><img src="linkedn.png" alt=""></li>
+                </ul>
+            </div>
+    </nav>
+            <div class="container">
+                <!-- <img class="bg-img" src="https://images8.alphacoders.com/366/thumb-1920-366332.jpg" alt=""> -->
+                    <div class="menu">
+                        <a href="#connexion" class="btn-connexion"><h2>SAUVER UN ARBRE</h2></a>
+                    </div>
+                    <div class="connexion">
+                        <div class="contact-form">
+                            <label for="signaler">SIGNALER</label>
+                            <select name="signaler" id="signaler">
+                                    <option value="">Indiquez votre choix</option>
+                                    <option value="arbremalade">Arbre malade</option>
+                            </select>
+
+                            <label for="photo">AJOUTEZ UNE PHOTO</label>
+                            <input type="file"id="photo" name="photo"accept="image/png, image/jpeg">
+
+                            <label for="localisation">AJOUTEZ LA LOCALISATION</label>
+                            <input type="checkbox" onclick="getLocation()" id="localistion" name="localisation">
+                            <p id="localisation"></p>
+
+                            <label for="nom">VOTRE NOM</label>
+                            <input type="text" id="nom" name="nom">
+
+                            <label for="prenom">VOTRE PRENOM</label>
+                            <input type="text" id="prenom" name="prenom">
+
+                            <label for="msg">VOTRE MESSAGE</label>
+                            <textarea id="msg" name="message"></textarea>
+
+                            <input class="submit" value="SIGNALER" type="submit">
+                        </div>
+</body>
+<script src="interface.js"></script>
+</html>
